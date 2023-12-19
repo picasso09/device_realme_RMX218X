@@ -91,7 +91,7 @@ drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l3_support=1
 
 # EGL
-ro.hardware.egl=mali
+ro.hardware.egl=mtk
 
 # fastbootd
 ro.fastbootd.available=true
@@ -143,7 +143,7 @@ ro.vendor.mtk_nn.option=D,E,F,Z
 ro.vendor.mtk_nn_support=1
 
 # Netflix
-ro.netflix.bsp_rev=MTK6768-19054-1
+ro.netflix.bsp_rev=MTK6765-19054-1
 
 # NFC
 ro.vendor.mtk_uicc_clf=1
@@ -153,10 +153,10 @@ ro.vendor.perf.scroll_opt=true
 
 # Platform
 ro.soc.manufacturer=Mediatek
-ro.soc.model=MT6768
-ro.vendor.mediatek.platform=MT6768
+ro.soc.model=MT6765
+ro.vendor.mediatek.platform=MT6765
 ro.vendor.mediatek.version.branch=alps-mp-q0.mp1.tc16sp
-ro.vendor.mediatek.version.release=alps-mp-q0.mp1.tc16sp-V1.48
+ro.vendor.mediatek.version.release=alps-mp-q0.mp1.tc16sp-V1.138
 
 # Power
 ro.vendor.ap_info_monitor=0

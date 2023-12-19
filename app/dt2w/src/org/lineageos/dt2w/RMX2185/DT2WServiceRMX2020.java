@@ -1,4 +1,4 @@
-package org.lineageos.dt2w.RMX2020;
+package org.lineageos.dt2w.RMX2185;
 
 import android.app.Service;
 import android.content.ContentResolver;
@@ -13,8 +13,8 @@ import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.Settings.Secure;
 
-public class DT2WServiceRMX2020 extends Service {
-    private static final String TAG = "DT2WServiceRMX2020";
+public class DT2WServiceRMX2185 extends Service {
+    private static final String TAG = "DT2WServiceRMX2185";
     private Context mContext;
     private Handler mHandler;
     private CustomSettingsObserver mCustomSettingsObserver;
