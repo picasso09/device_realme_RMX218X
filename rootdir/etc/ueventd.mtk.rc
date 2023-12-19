@@ -126,9 +126,6 @@
 /dev/ttySDIO*             0660   radio      sdcard_rw
 /dev/ttyRB*               0660   radio      radio
 
-# Mali
-/dev/mali                 0666   system     graphics
-
 # ION
 /dev/ion                  0666   system     graphics
 
