@@ -10,25 +10,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 # Inherit from device makefile
-$(call inherit-product, device/realme/RMX2020/device.mk)
+$(call inherit-product, device/realme/RMX2185/device.mk)
 
 # Inherit some common ProjectElixir stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_RMX2020
-PRODUCT_DEVICE := RMX2020
+PRODUCT_NAME := aosp_RMX2185
+PRODUCT_DEVICE := RMX2185
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := RMX2020
+PRODUCT_MODEL := RMX2185
 PRODUCT_MANUFACTURER := realme
 
-PRODUCT_SYSTEM_MODEL := RMX2020
-PRODUCT_SYSTEM_NAME := RMX2020
-PRODUCT_SYSTEM_DEVICE := RMX2020
+PRODUCT_SYSTEM_MODEL := RMX2185
+PRODUCT_SYSTEM_NAME := RMX2185
+PRODUCT_SYSTEM_DEVICE := RMX2185
 
 # ProjectElixir additions
 IS_PHONE := true
-ELIXIR_BUILD_TYPE := OFFICIAL
+ELIXIR_BUILD_TYPE := UNOFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SUPPORTS_GOOGLE_RECORDER := false

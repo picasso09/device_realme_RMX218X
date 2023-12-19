@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_RMX2020.mk
+    $(LOCAL_DIR)/aosp_RMX2185.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_RMX2020-user \
-    aosp_RMX2020-userdebug \
-    aosp_RMX2020-eng
+    aosp_RMX2185-user \
+    aosp_RMX2185-userdebug \
+    aosp_RMX2185-eng

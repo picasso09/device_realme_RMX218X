@@ -4,16 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/realme/RMX2020
+DEVICE_PATH := device/realme/RMX2185
 
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/realme/RMX2020/RMX2020-vendor.mk)
+$(call inherit-product, vendor/realme/RMX2185/RMX2185-vendor.mk)
 
 # IMS
-$(call inherit-product, vendor/realme/RMX2020-ims/RMX2020-ims.mk)
+$(call inherit-product, vendor/realme/RMX2185-ims/RMX2185-ims.mk)
 
 # RealmeDirac
 $(call inherit-product, $(DEVICE_PATH)/app/RealmeDirac/dirac.mk)
@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \
 
 # DT2W
 PRODUCT_PACKAGES += \
-    DT2W-Service-RMX2020
+    DT2W-Service-RMX2185
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -130,7 +130,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.RMX2020
+    android.hardware.biometrics.fingerprint@2.1-service.RMX2185
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -190,11 +190,11 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.RMX2020
+    android.hardware.light-service.RMX2185
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-RMX2020
+    vendor.lineage.livedisplay@2.0-service-RMX2185
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -309,32 +309,32 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.recovery.mt6768.rc \
+    init.recovery.mt6765.rc \
     init.connectivity.rc \
     init.modem.rc \
-    init.mt6768.rc \
-    init.mt6768.usb.rc \
+    init.mt6765.rc \
+    init.mt6765.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
-    fstab.mt6768 \
-    fstab.mt6768.ramdisk \
+    fstab.mt6765 \
+    fstab.mt6765.ramdisk \
     ueventd.mtk.rc
 
 # Runtime Resource Overlays 
 PRODUCT_PACKAGES += \
-    ApertureOverlayRMX2020 \
-    CarrierConfigOverlayRMX2020 \
-    FingerprintFrameworksResOverlayRMX2020 \
-    FingerprintSystemUIOverlayRMX2020 \
-    FrameworksResOverlayRMX2020 \
+    ApertureOverlayRMX2185 \
+    CarrierConfigOverlayRMX2185 \
+    FingerprintFrameworksResOverlayRMX2185 \
+    FingerprintSystemUIOverlayRMX2185 \
+    FrameworksResOverlayRMX2185 \
     FrameworksResOverlayRMX2027 \
-    SettingsOverlayRMX2020 \
-    SettingsProviderOverlayRMX2020 \
+    SettingsOverlayRMX2185 \
+    SettingsProviderOverlayRMX2185 \
     SettingsProviderOverlayRMX2027 \
-    SystemUIOverlayRMX2020 \
-    TelephonyOverlayRMX2020 \
-    TetheringResOverlayRMX2020 \
-    WifiResOverlayRMX2020
+    SystemUIOverlayRMX2185 \
+    TelephonyOverlayRMX2185 \
+    TetheringResOverlayRMX2185 \
+    WifiResOverlayRMX2185
 
 # Secure element
 PRODUCT_PACKAGES += \
