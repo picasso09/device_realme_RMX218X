@@ -115,7 +115,7 @@ void init_opperator_name_properties()
          * 126 -> NON NFC
          */
         if (opperator_name == "113" || opperator_name == "122") {
-            property_override("ro.boot.product.hardware.sku", "nfc");
+            property_override("ro.boot.product.hardware.sku", "dsds");
         }
     }
     else {
@@ -170,12 +170,12 @@ void init_fp_properties()
 
     if (!found) {
         property_override("persist.vendor.fingerprint.available", "false");
-        set_device_props("RMX2027", "RMX2027", "RMX2027", "RMX2027");
-        property_override("ro.device", "RMX2027");
-        property_override("ro.build.fingerprint", "realme/RMX2027/RMX2027:10/QP1A.190711.020/1651798546:user/release-keys");
+        set_device_props("RMX2185", "RMX2185", "RMX2185", "RMX2185");
+        property_override("ro.device", "RMX2185");
+        property_override("ro.build.fingerprint", "realme/RMX2189T2/RMX2189:10/QP1A.190711.020/1622100863:user/release-keys");
         avail = 1;
     }else{
-        property_override("ro.device", "RMX2020");
+        property_override("ro.device", "RMX2185");
     }
 
     if (ReadFileToString(fp_name_file, &fp_name)) {

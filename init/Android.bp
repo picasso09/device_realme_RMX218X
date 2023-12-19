@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_RMX2020",
+    name: "libinit_RMX2185",
     recovery_available: true,
-    srcs: ["init_RMX2020.cpp"],
+    srcs: ["init_RMX2185.cpp"],
     header_libs: [
         "libbase_headers",
     ],

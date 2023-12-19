@@ -33,9 +33,9 @@ cc_defaults {
 }
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.0-service-RMX2020",
-    init_rc: ["vendor.lineage.livedisplay@2.0-service-RMX2020.rc"],
-    vintf_fragments: ["vendor.lineage.livedisplay@2.0-service-RMX2020.xml"],
+    name: "vendor.lineage.livedisplay@2.0-service-RMX2185",
+    init_rc: ["vendor.lineage.livedisplay@2.0-service-RMX2185.rc"],
+    vintf_fragments: ["vendor.lineage.livedisplay@2.0-service-RMX2185.xml"],
     defaults: ["livedisplay_mediatek_defaults"],
     vendor: true,
 }

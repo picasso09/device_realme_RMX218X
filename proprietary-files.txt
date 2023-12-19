@@ -1,4 +1,4 @@
-# All the proprietary files are extracted from RMX2020-user 10 QP1A.190711.020 RMX2020_11.A.77 release-keys, unless pinned.
+# All the proprietary files are extracted from RMX2185-user 10 QP1A.190711.020 RMX2185_11.A.77 release-keys, unless pinned.
 
 # ADSP
 vendor/lib64/libadsprpc.so
@@ -8,7 +8,7 @@ vendor/bin/rttv
 vendor/lib/libdirect-coredump.so
 vendor/lib64/libdirect-coredump.so
 
-# AEE - from realme/RMX2020/RMX2020:11/RP1A.200720.011/1627637499567:user/release-keys
+# AEE - from realme/RMX2185/RMX2185:11/RP1A.200720.011/1627637499567:user/release-keys
 vendor/lib/libaedv.so|890379be0a71e647b8c8f885e8c7288fb3d849ba
 vendor/lib/libladder.so|b3161af9c1ae115b467ed6d210355348717145c8
 vendor/lib/libudf.so|0ff2e45766f5ff54a7b975afd69f13ec5d20cd81
@@ -18,12 +18,12 @@ vendor/lib64/libladder.so|47ab171fde2026c25c0c63f0af9bfcee3fcd74a9
 # AEE - from Redmi/ares/ares:12/SP1A.210812.016/21.11.8:user/release-keys
 vendor/lib64/libudf.so|f57a4f63592b62c2de72b377021327756fc5fac1
 
-# Audio - from realme/RMX2020/RMX2020:11/RP1A.200720.011/1627637499567:user/release-keys
+# Audio - from realme/RMX2185/RMX2185:11/RP1A.200720.011/1627637499567:user/release-keys
 system_ext/lib/vendor.mediatek.hardware.audio@6.1.so|7082871ea20eef1690106c474458adccccb5ead6
 system_ext/lib64/vendor.mediatek.hardware.audio@6.1.so|f6750522658b3f5890394b02809e9b6cf426b4e3
-vendor/lib/hw/audio.primary.mt6768.so|c9414a19afb0b044b61e6168c4df727bd1a49447
-vendor/lib/hw/audio.r_submix.mt6768.so|f823dc1830b86185bd6211105eaab1f3763fd5bf
-vendor/lib/hw/audio.usb.mt6768.so|460480985d276f45c97fbb14a1b8e2e6757bf2b6
+vendor/lib/hw/audio.primary.mt6765.so|c9414a19afb0b044b61e6168c4df727bd1a49447
+vendor/lib/hw/audio.r_submix.mt6765.so|f823dc1830b86185bd6211105eaab1f3763fd5bf
+vendor/lib/hw/audio.usb.mt6765.so|460480985d276f45c97fbb14a1b8e2e6757bf2b6
 vendor/lib/libalsautils.so:vendor/lib/libalsautils-v30.so|6668228d72340335d4d8db04f04dade6efa94c24
 vendor/lib/libMtkSpeechEnh.so|b92ddcb08d5c26d8c7cbd88a5f14ae73c904c0e3
 vendor/lib/lib_aurisys_lvimfs.so|91538d0961b1b17d91731705664887f116df51f3
@@ -63,9 +63,9 @@ vendor/lib/libspeech_enh_lib.so|6ccb349f9c5bc931c11b0b1c9467083874833c56
 vendor/lib/libspeechparser_vendor.so|c868095b6d104532c856b47a3969f7e5c23ae25b
 vendor/lib/libtinyxml.so|db901f50b694ec5791932685466ceafbd64567a5
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so|3fbe8411fa37e64116bf2c93734349b343266e15
-vendor/lib64/hw/audio.primary.mt6768.so|9f77ee65cf1683caa490cc651936f26093183120
-vendor/lib64/hw/audio.r_submix.mt6768.so|594af4741a81d890e472da6592ec28d83bcdcbc3
-vendor/lib64/hw/audio.usb.mt6768.so|0d5f32ae124543938d4b0a67ee20993d05594c46
+vendor/lib64/hw/audio.primary.mt6765.so|9f77ee65cf1683caa490cc651936f26093183120
+vendor/lib64/hw/audio.r_submix.mt6765.so|594af4741a81d890e472da6592ec28d83bcdcbc3
+vendor/lib64/hw/audio.usb.mt6765.so|0d5f32ae124543938d4b0a67ee20993d05594c46
 vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v30.so|4d9068585b18827dd0652f6c0964ebbb1b1ff2c3
 vendor/lib64/libMtkSpeechEnh.so|ab835f57495a249f5549200477853204bfe11530
 vendor/lib64/lib_aurisys_lvimfs.so|672c9704a23a5893eed7aaf0afd2dac903ecc0fa
@@ -110,7 +110,7 @@ vendor/lib64/vendor.mediatek.hardware.audio@6.1.so|7247c3d608d23fa3b659bf2ccbcad
 vendor/bin/audiocmdservice_atci
 vendor/etc/init/audiocmdservice_atci.rc
 
-# Audio (Configs) - from realme/RMX2020/RMX2020:11/RP1A.200720.011/1627637499567:user/release-keys
+# Audio (Configs) - from realme/RMX2185/RMX2185:11/RP1A.200720.011/1627637499567:user/release-keys
 odm/etc/audio/audio_device/common/audio_device.xml|48ceb5ffa05818b8bca0ac9c1248423b4afcf898
 odm/etc/audio/audio_device/audio_device.xml|ae5a3c002208099d368f20064a080f90578a6f92
 odm/etc/audio/audio_param/AudioParamOptions.xml|c795b26fe745ef0817f2d0be17892a294f6f1f00
@@ -322,7 +322,7 @@ vendor/etc/aurisys_config.xml|5e3f6e4aeea3ba3ab89ad91f0babba553e6af8a6
 vendor/etc/aurisys_config_sia.xml|edd7b695501ea45b6c9e072dacd7c6a14119053b
 vendor/etc/spk.wav|6f0545ef2e4367e335a846461a1dffc3d6cc5d92
 
-# Audio (SoundFX) - from RMX2020-user 10 QP1A.190711.020 RMX2020_11.A.03 release-keys
+# Audio (SoundFX) - from RMX2185-user 10 QP1A.190711.020 RMX2185_11.A.03 release-keys
 vendor/etc/dirac/19741/diracmobile.config|32295428b4878c9e52d271c7497c6d6ddee8a427
 vendor/etc/dirac/19741/diracvdd.bin|f8730855d85648783df7203337e4ba49d5bc17fa
 vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
@@ -591,7 +591,7 @@ vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 vendor/lib64/vendor.oppo.hardware.camera.slogan@1.0.so
 
-# Camera - from RMX2020-user 10 QP1A.190711.020 RMX2020_11.A.03 release-keys
+# Camera - from RMX2185-user 10 QP1A.190711.020 RMX2185_11.A.03 release-keys
 vendor/lib/monetd_lh_depth_gc2375h_tuning.so|a0c82dc8bfb3c1ff78200043813ff4eef9c04e9e
 vendor/lib64/monetd_lh_depth_gc2375h_IdxMgr.so|34a77c76662b8c24360666df78080f13a9a00326
 vendor/lib64/monetd_lh_depth_gc2375h_tuning.so|c305f2e7e98da77998076aa4ed9e71689b5b24b7
@@ -664,9 +664,9 @@ vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/lib/hw/dfps.mt6768.so
-vendor/lib/hw/gralloc.mt6768.so
-vendor/lib/hw/memtrack.mt6768.so
+vendor/lib/hw/dfps.mt6765.so
+vendor/lib/hw/gralloc.mt6765.so
+vendor/lib/hw/memtrack.mt6765.so
 vendor/lib/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.3-impl.so
 vendor/lib/libdpframework.so
@@ -687,10 +687,10 @@ vendor/lib/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib/vendor.mediatek.hardware.pq@2.1.so
 vendor/lib/vendor.mediatek.hardware.pq@2.2.so
 vendor/lib/vendor.mediatek.hardware.pq@2.3.so
-vendor/lib64/hw/dfps.mt6768.so
-vendor/lib64/hw/gralloc.mt6768.so
-vendor/lib64/hw/hwcomposer.mt6768.so
-vendor/lib64/hw/memtrack.mt6768.so
+vendor/lib64/hw/dfps.mt6765.so
+vendor/lib64/hw/gralloc.mt6765.so
+vendor/lib64/hw/hwcomposer.mt6765.so
+vendor/lib64/hw/memtrack.mt6765.so
 vendor/lib64/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.3-impl.so
 vendor/lib64/libdpframework.so
@@ -1073,7 +1073,7 @@ vendor/lib64/libwo.so
 vendor/lib64/libwpfa.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# IMS - from realme/RMX2020/RMX2020:11/RP1A.200720.011/1648050486506:user/release-keys
+# IMS - from realme/RMX2185/RMX2185:11/RP1A.200720.011/1648050486506:user/release-keys
 lib/libsink.so|3bead07276110d282e3b5d9055caa7d3bf2839fd
 lib/libcomutils.so|b1eb6f3f832bfa2eaf246d3a682a0908e62cdca1
 lib/libimsma.so|5d348e67e9f748fab5b5f1c40cc29ead33217172
@@ -1217,7 +1217,7 @@ vendor/lib/modules/wlan_drv_gen4m.ko
 vendor/lib/modules/wmt_chrdev_wifi.ko
 vendor/lib/modules/wmt_drv.ko
 
-# Neural Networks - from realme/RMX2020/RMX2020:11/RP1A.200720.011/1627637499567:user/release-keys
+# Neural Networks - from realme/RMX2185/RMX2185:11/RP1A.200720.011/1627637499567:user/release-keys
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron|26ea561188e545d13cfd92d9bd80332b820b6977
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc|ebdc6355d6d4b243161f536aeafb9392373bde11
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml|931e81cc7471e68f410b6813fba24175ea397731
@@ -1306,7 +1306,7 @@ vendor/etc/init/md_monitor.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/lib/hw/android.hardware.power@1.3-impl-mediatek.so
-vendor/lib/hw/power.mt6768.so
+vendor/lib/hw/power.mt6765.so
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.power@2.1-impl.so
 vendor/lib/libmmprofile.so
@@ -1317,7 +1317,7 @@ vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
 vendor/lib/vendor.mediatek.hardware.power@2.0.so
 vendor/lib/vendor.mediatek.hardware.power@2.1.so
 vendor/lib64/hw/android.hardware.power@1.3-impl-mediatek.so
-vendor/lib64/hw/power.mt6768.so
+vendor/lib64/hw/power.mt6765.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.power@2.1-impl.so
 vendor/lib64/libmmprofile.so
@@ -1432,8 +1432,8 @@ vendor/lib64/vendor.mediatek.hardware.radio_op@1.4.so
 vendor/lib64/vendor.mediatek.hardware.radio_op@2.0.so
 
 # Radio (Configs)
-vendor/etc/apdb/APDB_MT6768_S01__W1952
-vendor/etc/apdb/APDB_MT6768_S01__W1952_ENUM
+vendor/etc/apdb/APDB_mt6765_S01__W1952
+vendor/etc/apdb/APDB_mt6765_S01__W1952_ENUM
 vendor/etc/DSM.xml
 vendor/etc/DSM_config.xml
 vendor/etc/ecc_list.xml
@@ -1458,7 +1458,7 @@ vendor/etc/init/android.hardware.sensors@2.0-service-mediatek.rc
 vendor/lib/libhwm.so
 vendor/lib/libmxmafa.so
 vendor/lib/sensors.ap.so
-vendor/lib64/hw/sensors.mt6768.so
+vendor/lib64/hw/sensors.mt6765.so
 vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 vendor/lib64/libmxmafa.so
@@ -1472,10 +1472,10 @@ vendor/bin/thermalloadalgod
 vendor/etc/init/init.thermal.rc
 vendor/etc/init/init.thermal_manager.rc
 vendor/etc/init/init.thermalloadalgod.rc
-vendor/lib/hw/thermal.mt6768.so
+vendor/lib/hw/thermal.mt6765.so
 vendor/lib/libmtcloader.so
 vendor/lib/libthermalalgo.so
-vendor/lib64/hw/thermal.mt6768.so
+vendor/lib64/hw/thermal.mt6765.so
 vendor/lib64/libmtcloader.so
 
 # Thermal (Configs)
