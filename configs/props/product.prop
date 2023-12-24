@@ -2,5 +2,4 @@
 ro.control_privapp_permissions=log
 
 # Project-Elixir stuff
-ro.elixir.maintainer=picasso09 X RzaIX
 org.elixir.device=RMX2185
