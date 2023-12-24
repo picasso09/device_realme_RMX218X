@@ -16,6 +16,6 @@ git clone --depth=1 https://github.com/ArrowOS/android_hardware_mediatek -b arro
 rm -rf device/mediatek/sepolicy_vndr
 git clone https://github.com/ArrowOS/android_device_mediatek_sepolicy_vndr -b arrow-13.1 device/mediatek/sepolicy_vndr
 
-# AOSP 13.0.1 clang-r353983c1 need RMX2185 (if use new clang camera compile got broken)
+# AOSP 13.0.1 clang-r353983c1 need RMX2185 (if use new clang compile got broken)
 rm -rf prebuilts/clang/host/linux-x86/clang-r353983c1
 git clone --depth=1 https://github.com/picasso09/clang-9.0.3-r353983c1 prebuilts/clang/host/linux-x86/clang-r353983c1
