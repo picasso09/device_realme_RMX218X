@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "ApertureOverlayRMX2185",
+    system_ext_specific: true,
+}
