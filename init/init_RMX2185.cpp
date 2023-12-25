@@ -157,7 +157,7 @@ void init_fp_properties()
 	    "S98670GA1","S98670HA1","S98670JA1",
 	    "S98670KA1","S98670LA1","S98670MA1",
 	    "S98670NA1","S98670PA1","S98670WA1",
-	    "S986703A1","S986704A1"
+	    "S98639AA1","S986704A1"
     };
 
     bool found = false;

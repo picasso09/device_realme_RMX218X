@@ -327,10 +327,8 @@ PRODUCT_PACKAGES += \
     FingerprintFrameworksResOverlayRMX2185 \
     FingerprintSystemUIOverlayRMX2185 \
     FrameworksResOverlayRMX2185 \
-    FrameworksResOverlayRMX2027 \
     SettingsOverlayRMX2185 \
     SettingsProviderOverlayRMX2185 \
-    SettingsProviderOverlayRMX2027 \
     SystemUIOverlayRMX2185 \
     TelephonyOverlayRMX2185 \
     TetheringResOverlayRMX2185 \
