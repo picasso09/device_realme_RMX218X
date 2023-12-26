@@ -19,8 +19,8 @@ vendor/lib64/libladder.so|47ab171fde2026c25c0c63f0af9bfcee3fcd74a9
 vendor/lib64/libudf.so|f57a4f63592b62c2de72b377021327756fc5fac1
 
 # Audio - from realme/RMX2185/RMX2185:11/RP1A.200720.011/1627637499567:user/release-keys
-system_ext/lib/vendor.mediatek.hardware.audio@6.1.so|7082871ea20eef1690106c474458adccccb5ead6
-system_ext/lib64/vendor.mediatek.hardware.audio@6.1.so|f6750522658b3f5890394b02809e9b6cf426b4e3
+system_ext/lib/vendor.mediatek.hardware.audio@5.1.so|7082871ea20eef1690106c474458adccccb5ead6
+system_ext/lib64/vendor.mediatek.hardware.audio@5.1.so|f6750522658b3f5890394b02809e9b6cf426b4e3
 vendor/lib/hw/audio.primary.mt6765.so|c9414a19afb0b044b61e6168c4df727bd1a49447
 vendor/lib/hw/audio.r_submix.mt6765.so|f823dc1830b86185bd6211105eaab1f3763fd5bf
 vendor/lib/hw/audio.usb.mt6765.so|460480985d276f45c97fbb14a1b8e2e6757bf2b6
@@ -62,7 +62,7 @@ vendor/lib/libsixth.so|1f917500bbd8871a75de583dd86a8ac4a305980e
 vendor/lib/libspeech_enh_lib.so|6ccb349f9c5bc931c11b0b1c9467083874833c56
 vendor/lib/libspeechparser_vendor.so|c868095b6d104532c856b47a3969f7e5c23ae25b
 vendor/lib/libtinyxml.so|db901f50b694ec5791932685466ceafbd64567a5
-vendor/lib/vendor.mediatek.hardware.audio@6.1.so|3fbe8411fa37e64116bf2c93734349b343266e15
+vendor/lib/vendor.mediatek.hardware.audio@5.1.so|3fbe8411fa37e64116bf2c93734349b343266e15
 vendor/lib64/hw/audio.primary.mt6765.so|9f77ee65cf1683caa490cc651936f26093183120
 vendor/lib64/hw/audio.r_submix.mt6765.so|594af4741a81d890e472da6592ec28d83bcdcbc3
 vendor/lib64/hw/audio.usb.mt6765.so|0d5f32ae124543938d4b0a67ee20993d05594c46
@@ -104,7 +104,7 @@ vendor/lib64/libsixth.so|6d23219be2becb180435ab7ccbc94b6688754932
 vendor/lib64/libspeech_enh_lib.so|5144d530b064a1cdcc0b65cf28d17767558c630b
 vendor/lib64/libspeechparser_vendor.so|ed6743433f50d942afb9da7061e55433c9b8a011
 vendor/lib64/libtinyxml.so|b9f9790bd8704bb8d1aebc6ee78a125f7023d925
-vendor/lib64/vendor.mediatek.hardware.audio@6.1.so|7247c3d608d23fa3b659bf2ccbcad628653aebe3
+vendor/lib64/vendor.mediatek.hardware.audio@5.1.so|7247c3d608d23fa3b659bf2ccbcad628653aebe3
 
 # Audio (Bin)
 vendor/bin/audiocmdservice_atci
@@ -1021,14 +1021,17 @@ vendor/etc/security/pl.fs
 
 # Graphics
 vendor/lib/egl/egl.cfg
-vendor/lib/egl/libGLES_mali.so
+vendor/lib/egl/libEGL_mtk.so
 vendor/lib/egl/libGLES_meow.so
+vendor/lib/egl/libGLESv1_CM_mtk.so
+vendor/lib/egl/libGLESv2_mtk.so
 vendor/lib/egl/libMEOW_trace.so
-vendor/lib/libOpenCL.so
-vendor/lib64/egl/libGLES_mali.so
+vendor/lib64/egl/libEGL_mtk.so
 vendor/lib64/egl/libGLES_meow.so
+vendor/lib64/egl/libGLESv1_CM_mtk.so
+vendor/lib64/egl/libGLESv2_mtk.so
 vendor/lib64/egl/libMEOW_trace.so
-vendor/lib64/libOpenCL.so
+
 
 # IMS
 bin/vtservice
@@ -1229,25 +1232,8 @@ vendor/lib/modules/wmt_chrdev_wifi.ko
 vendor/lib/modules/wmt_drv.ko
 
 # Neural Networks - from realme/RMX2185/RMX2185:11/RP1A.200720.011/1627637499567:user/release-keys
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron|26ea561188e545d13cfd92d9bd80332b820b6977
-vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc|ebdc6355d6d4b243161f536aeafb9392373bde11
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml|931e81cc7471e68f410b6813fba24175ea397731
-vendor/lib/libarmnn_ndk.mtk.so|264e74895a7261f0795e8d304016f45133df4906
-vendor/lib/libcmdl_ndk.mtk.so|28af41508eb702223f5bc7a767403e2dd3413176
-vendor/lib/libneuroeara.so|746b60e396520ddb788c8284d9778099a5ef8a86
 vendor/lib/libneuropilot_hal_utils.so|79888a4d0202ac7ac8552437726edf7e2c31772d
-vendor/lib/libneuropilot_jni_R.so|43514cf245c0218f09cbcc6e5743a2fa40192996
-vendor/lib64/libarmnn.so|3903dc96be2aaa6767518dd670d96dde94cd0bf8
-vendor/lib64/libarmnn_ndk.mtk.so|c1cb1964812b9d56f8b063be9a30aba0d13db7d4
-vendor/lib64/libcmdl.so|861fb9c6d94980de5a58d73e404cd88567421920
-vendor/lib64/libcmdl_ndk.mtk.so|44debcccf39935d2750422f97c6b70618bd10dff
-vendor/lib64/libneuroeara.so|3834594eac96d738d3ed80db56852f7d89074799
-vendor/lib64/libneuron_adapter.so|65d7fa5fe7245b57ff9eeab910cf0cb3b073a245
-vendor/lib64/libneuron_platform.so|8da6073450643184de16ffd984f05ee900bd36db
 vendor/lib64/libneuropilot_hal_utils.so|76dccfc3139109b18251716815956d960691f566
-vendor/lib64/libneuropilot_jni_R.so|8687131c5b139f7205db80d4a934b0c2374953ae
-vendor/lib64/libnir_neon_driver.so|5feec1e1a3a77d6022f259bf39fff8f644fb3e0c
-vendor/lib64/libnir_neon_driver_ndk.mtk.so|58a4322988d1f224e126a42897a0289a14b50262
 
 # NFC
 vendor/bin/hw/android.hardware.secure_element@1.0-service-mediatek
