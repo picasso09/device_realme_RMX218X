@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=RMX2020
+DEVICE=RMX2185
 VENDOR=realme
 
 # Load extract_utils and do some sanity checks
@@ -58,11 +58,11 @@ function blob_fixup {
         lib/libsink.so)
             grep -q "libshim_vtservice.so" "${2}" || patchelf --add-needed "libshim_vtservice.so" "${2}"
             ;;
-        vendor/lib*/hw/audio.primary.mt6768.so)
+        vendor/lib*/hw/audio.primary.mt6765.so)
             grep -q "libmedia_helper-v30.so" "${2}" || patchelf --replace-needed "libmedia_helper.so" "libmedia_helper-v30.so" "${2}"
             grep -q "libalsautils-v30.so" "${2}" || patchelf --replace-needed "libalsautils.so" "libalsautils-v30.so" "${2}"
             ;;
-        vendor/lib*/hw/audio.usb.mt6768.so)
+        vendor/lib*/hw/audio.usb.mt6765.so)
             grep -q "libalsautils-v30.so" "${2}" || patchelf --replace-needed "libalsautils.so" "libalsautils-v30.so" "${2}"
             ;; 
         vendor/bin/hw/hostapd)
@@ -88,9 +88,6 @@ function blob_fixup {
             ;;
         vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc)
             sed -i '/cpuset/Q' "$2"
-            ;;
-        vendor/lib64/hw/dfps.mt6768.so)
-            grep -q "libutils-v30.so" "${2}" || patchelf --replace-needed "libutils.so" "libutils-v30.so" "${2}"
             ;;
         vendor/lib64/hw/vendor.mediatek.hardware.pq@2.3-impl.so)
             grep -q "libutils-v30.so" "${2}" || patchelf --replace-needed "libutils.so" "libutils-v30.so" "${2}"
