@@ -24,9 +24,8 @@ system_ext/lib64/vendor.mediatek.hardware.audio@5.1.so|f6750522658b3f5890394b028
 vendor/lib/hw/audio.primary.mt6765.so|c9414a19afb0b044b61e6168c4df727bd1a49447
 vendor/lib/hw/audio.r_submix.mt6765.so|f823dc1830b86185bd6211105eaab1f3763fd5bf
 vendor/lib/hw/audio.usb.mt6765.so|460480985d276f45c97fbb14a1b8e2e6757bf2b6
-vendor/lib/libalsautils.so:vendor/lib/libalsautils-v30.so|6668228d72340335d4d8db04f04dade6efa94c24
+vendor/lib/libalsautils.so|6668228d72340335d4d8db04f04dade6efa94c24
 vendor/lib/libMtkSpeechEnh.so|b92ddcb08d5c26d8c7cbd88a5f14ae73c904c0e3
-vendor/lib/lib_aurisys_lvimfs.so|91538d0961b1b17d91731705664887f116df51f3
 vendor/lib/lib_iir.so|23dc437870e763f3c79fe25b485061dc359c07e5
 vendor/lib/lib_speech_enh.so|99d29b4d4a7a431bea177923633ee3396130bf85
 vendor/lib/libaudio_engineer_test.so|18eec4ee3c18710f2e0d2f270ab4e0cd02868e3a
@@ -45,18 +44,7 @@ vendor/lib/libaurisysdemo.so|7d50fb7d81ef230810684b2196c260d3b7999482
 vendor/lib/libbessound_hd_mtk_vendor.so|be26ab3e2abc594f4f600a66856be1f3dfba36c1
 vendor/lib/libblisrc32_vendor.so|bb3bf6f91408462dda1185dde021069ce5823862
 vendor/lib/libcvsd_mtk.so|a7393d78e3bd64432e8c8f0f51584092ce366f97
-vendor/lib/libktvdrc.so|11b1cb3ee1bd5b5cb007429bcccdd1f1d9736980
-vendor/lib/libktveffect.so|8232e33eb8cc7aad5ad58ad880525f22e2780bae
-vendor/lib/libktveffect_rec.so|9b9d0695bd8c25fddb7abc6dcba9762f8dd2c02c
-vendor/lib/libktveq.so|311773f125c51a39d3f0f6737a61222cd17d980a
-vendor/lib/libktvns.so|52ab320cedcb76209d8e8fb723290b81003e8bb4
-vendor/lib/libktvreverb.so|af86e4b48b23939c58baa1ff8fc6615951acd4b0
-vendor/lib/libktvsoundtouch.so|056ac2e897c39bfdf714905b1477b6250eb64922
-vendor/lib/libktvvolume.so|45597a484c637ddf6ed10ec1302fd2566df20d9e
-vendor/lib/liblvimfs.so|7d9c09045acd1c514948ed32dd0dee116d537898
-vendor/lib/liblvimfs_wrapper.so|eadc8290aca2bcc0a4ebbf2e2f6b797e096a1918
 vendor/lib/libmsbc_mtk.so|af56d8b246a9cd88e7298bddfd14af6012d4abd2
-vendor/lib/liboplus_audio_config.so|aeb6eedb0adff9d23d0f99716bc7d6cfbb4a1dc1
 vendor/lib/libreverb.so|c64f3b5cae318bda5675beba8fc53a011a1b4193
 vendor/lib/libsixth.so|1f917500bbd8871a75de583dd86a8ac4a305980e
 vendor/lib/libspeech_enh_lib.so|6ccb349f9c5bc931c11b0b1c9467083874833c56
@@ -66,9 +54,8 @@ vendor/lib/vendor.mediatek.hardware.audio@5.1.so|3fbe8411fa37e64116bf2c93734349b
 vendor/lib64/hw/audio.primary.mt6765.so|9f77ee65cf1683caa490cc651936f26093183120
 vendor/lib64/hw/audio.r_submix.mt6765.so|594af4741a81d890e472da6592ec28d83bcdcbc3
 vendor/lib64/hw/audio.usb.mt6765.so|0d5f32ae124543938d4b0a67ee20993d05594c46
-vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v30.so|4d9068585b18827dd0652f6c0964ebbb1b1ff2c3
+vendor/lib64/libalsautils.so|4d9068585b18827dd0652f6c0964ebbb1b1ff2c3
 vendor/lib64/libMtkSpeechEnh.so|ab835f57495a249f5549200477853204bfe11530
-vendor/lib64/lib_aurisys_lvimfs.so|672c9704a23a5893eed7aaf0afd2dac903ecc0fa
 vendor/lib64/lib_iir.so|b3e2c389bf2be3534f46a81aeed4a80395de9d72
 vendor/lib64/lib_speech_enh.so|3c9064a5da1110d092470cbbc11ebcb7d0936e85
 vendor/lib64/libaudio_engineer_test.so|a3938237132494f09436c65792b28552dc74755a
@@ -95,10 +82,7 @@ vendor/lib64/libktvns.so|1cbe265e5d0682570ae9e5344997c2526d833eda
 vendor/lib64/libktvreverb.so|614b046e4b957012b0bb89b7aa1ebd976ad37d4d
 vendor/lib64/libktvsoundtouch.so|b6ce5d06a8dbaf72cb64865dde9537f398a91c82
 vendor/lib64/libktvvolume.so|29a54281d3e41883ea7021a5119c7680b7a7ffb6
-vendor/lib64/liblvimfs.so|ef3c42652a08a90305aa1113389b0f9b30e933ef
-vendor/lib64/liblvimfs_wrapper.so|fbc9b6e39ca272910c32af8aeeb6007e7a1e9095
 vendor/lib64/libmsbc_mtk.so|61bb20b6c226c5b570154a74bcab714d33983d7f
-vendor/lib64/liboplus_audio_config.so|8301d7c80721d8b8e763ee10cf0943a55b85d0f0
 vendor/lib64/libreverb.so|013cce2fb37a284b5ded2c9fe0256ead19753579
 vendor/lib64/libsixth.so|6d23219be2becb180435ab7ccbc94b6688754932
 vendor/lib64/libspeech_enh_lib.so|5144d530b064a1cdcc0b65cf28d17767558c630b
@@ -356,9 +340,9 @@ vendor/lib64/libbt-vendor.so
 # Camera
 vendor/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 vendor/lib/hw/vendor.oppo.hardware.camera.slogan@1.0-impl.so
-vendor/lib/libJpgEncPipe.so
 vendor/lib/libVDPostureDetection.so
-vendor/lib/libcam.halsensor.hwintegration.so
+vendor/lib/libJpgDecPipe.so
+vendor/lib/libJpgEncPipe.so
 vendor/lib/libjpeg-alpha-oal_vendor.so
 vendor/lib/libjpeg-alpha_vendor.so
 vendor/lib/libmpbase.so
@@ -369,8 +353,6 @@ vendor/lib/libmtkcam_stdutils.so
 vendor/lib/libmtkcam_ulog.so
 vendor/lib/libstdc++.so
 vendor/lib/libstfaceunlockocl.so
-vendor/lib/libtflite_mtk.so
-vendor/lib/libtflite_mtk_static.so
 vendor/lib/pascal_cxt_mono1_gc02m1b_tuning.so
 vendor/lib/pascal_cxt_mono_ov02b1b_tuning.so
 vendor/lib/pascal_lhyx_mono1_ov02b1b_tuning.so
@@ -412,7 +394,6 @@ vendor/lib64/lib3a.lce.so
 vendor/lib64/lib3a.log.so
 vendor/lib64/lib3a.n3d3a.so
 vendor/lib64/libFaceBeautyCap.so
-vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libMegviiHumBokehPost-mtk.so
 vendor/lib64/libOPPORectify.so
 vendor/lib64/libPerfectlyClearCrux.so
@@ -425,10 +406,8 @@ vendor/lib64/libSonyIMX386PdafLibrary.so
 vendor/lib64/libSonyIMX386PdafLibraryWrapper.so
 vendor/lib64/libSonyIMX519PdafLibrary.so
 vendor/lib64/libSonyIMX519PdafLibraryWrapper.so
-vendor/lib64/libVDBlurlessAPI_v2.so
 vendor/lib64/libVDDualCameraBlurless.so
 vendor/lib64/libVDExternal.so
-vendor/lib64/libVDEyeEnhance.so
 vendor/lib64/libVDPostureDetection.so
 vendor/lib64/libVDSuperPhotoAPI.so
 vendor/lib64/lib_bsscore.so
@@ -440,7 +419,6 @@ vendor/lib64/libcam.hal3a.v3.lsctbl.so
 vendor/lib64/libcam.hal3a.v3.nvram.so
 vendor/lib64/libcam.hal3a.v3.so
 vendor/lib64/libcam.halisp.so
-vendor/lib64/libcam.halsensor.hwintegration.so
 vendor/lib64/libcam.halsensor.so
 vendor/lib64/libcam.iopipe.so
 vendor/lib64/libcam.lcs.so
@@ -475,7 +453,6 @@ vendor/lib64/libcameracustom.plugin.so
 vendor/lib64/libcameracustom.so
 vendor/lib64/libcvface_api.so
 vendor/lib64/libeffecthal.base.so
-vendor/lib64/libfcell.so
 vendor/lib64/libimageio.so
 vendor/lib64/libimageio_plat_drv.so
 vendor/lib64/libimageio_plat_pipe.so
@@ -547,8 +524,6 @@ vendor/lib64/liboppo_platform_hwi.so
 vendor/lib64/libstdc++.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/libstface_fd_api.so
-vendor/lib64/libtflite_mtk.so
-vendor/lib64/libtflite_mtk_static.so
 vendor/lib64/pascal_cxt_mono1_gc02m1b_IdxMgr.so
 vendor/lib64/pascal_cxt_mono1_gc02m1b_tuning.so
 vendor/lib64/pascal_cxt_mono_ov02b1b_IdxMgr.so
@@ -599,7 +574,6 @@ vendor/lib64/vendor.oppo.hardware.camera.slogan@1.0.so
 vendor/lib64/libmtkcam_3rdparty.customer.so|6de2f5ab49667447671967c9c6483f4e7fbdf290
 
 # Camera (Arcsoft)
-vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_distortion_correction.so
 vendor/lib64/libarcsoft_dualcam_bokeh_api.so
 vendor/lib64/libarcsoft_dualcam_refocus_left.so
@@ -669,19 +643,14 @@ vendor/lib64/libfeatureiodrv_mem.so
 vendor/lib64/libcdsprpc.so
 
 # Display
-vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
-vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/lib/hw/dfps.mt6765.so
 vendor/lib/hw/gralloc.mt6765.so
 vendor/lib/hw/memtrack.mt6765.so
-vendor/lib/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.3-impl.so
 vendor/lib/libdpframework.so
-vendor/lib/libfpspolicy.so
 vendor/lib/libged.so
 vendor/lib/libgpu_aux.so
 vendor/lib/libgpud.so
@@ -692,20 +661,16 @@ vendor/lib/libminiui.so
 vendor/lib/libpixelflinger.so
 vendor/lib/libpq_cust_base.so
 vendor/lib/libpq_prot.so
-vendor/lib/vendor.mediatek.hardware.dfps@1.0.so
 vendor/lib/vendor.mediatek.hardware.gpu@1.0.so
 vendor/lib/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib/vendor.mediatek.hardware.pq@2.1.so
 vendor/lib/vendor.mediatek.hardware.pq@2.2.so
 vendor/lib/vendor.mediatek.hardware.pq@2.3.so
-vendor/lib64/hw/dfps.mt6765.so
 vendor/lib64/hw/gralloc.mt6765.so
 vendor/lib64/hw/hwcomposer.mt6765.so
 vendor/lib64/hw/memtrack.mt6765.so
-vendor/lib64/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.3-impl.so
 vendor/lib64/libdpframework.so
-vendor/lib64/libfpspolicy.so
 vendor/lib64/libged.so
 vendor/lib64/libgpu_aux.so
 vendor/lib64/libgpud.so
@@ -716,7 +681,6 @@ vendor/lib64/libminiui.so
 vendor/lib64/libpixelflinger.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/libpq_prot.so
-vendor/lib64/vendor.mediatek.hardware.dfps@1.0.so
 vendor/lib64/vendor.mediatek.hardware.gpu@1.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.1.so
@@ -738,20 +702,13 @@ vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
 vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
 vendor/lib/hw/fingerprint.silead.default.so
-vendor/lib/libsl_fp_algo.so
 vendor/lib/libsl_fp_impl.so
-vendor/lib/libsl_fp_nosec.so
-vendor/lib/libsl_fp_prepro.so
 vendor/lib64/hw/fingerprint.silead.default.so
 vendor/lib64/android.frameworks.fingerprintservice@1.0.so
 vendor/lib64/libRbsFlow.so
-vendor/lib64/libsl_fp_algo.so
 vendor/lib64/libsl_fp_impl.so
-vendor/lib64/libsl_fp_nosec.so
-vendor/lib64/libsl_fp_prepro.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
 vendor/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so
 
 # Fingerprint - from moto_troika 9/PSB29.105-27/fd362:user/release-keys
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs|ad879e7ed06f50c804e79fb9312614c4fdef49e5
@@ -1139,9 +1096,7 @@ vendor/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service
 vendor/bin/recordevent
 vendor/bin/replayevent
 vendor/bin/rpmbengclient_test
-vendor/bin/vpud
 vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc
-vendor/etc/init/vpud.rc
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/etc/seccomp_policy/mediaswcodec.policy
 vendor/etc/mtk_omx_core.cfg
@@ -1182,9 +1137,7 @@ vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv.so
 vendor/lib/libvoh264enc.so
 vendor/lib/libvp8dec_sa.ca7.so
-vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
-vendor/lib/libvpud_vcodec.so
 vendor/lib/vendor.mediatek.hardware.mtkcodecservice@1.1.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 vendor/lib64/libBnMtkCodec.so
@@ -1243,9 +1196,7 @@ vendor/etc/init/init.pn8x.nfc.rc
 vendor/etc/init/init.pn8x.se.rc
 vendor/lib/ese_client.so
 vendor/lib/libpn553_fw.so
-vendor/lib/nfc_nci.pn54x.default.so
 vendor/lib64/ese_client.so
-vendor/lib64/nfc_nci.pn54x.default.so
 
 # NFC (Configs)
 vendor/etc/ncf_pack.ncf
@@ -1548,7 +1499,7 @@ vendor/bin/wpa_cli
 vendor/etc/init/hostapd.android.rc
 vendor/etc/init/wlan_assistant.rc
 vendor/lib/libwpa_client.so
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+vendor/lib64/libwifi-hal.so
 vendor/lib64/libwifitest.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/vendor.mediatek.hardware.wifi.hostapd@2.0.so
