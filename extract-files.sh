@@ -95,8 +95,6 @@ function blob_fixup {
         vendor/lib/libMtkOmxVdecEx.so)
             grep -q "libui-v32.so" "${2}" || patchelf --replace-needed "libui.so" "libui-v32.so" "$2"
             ;;
-        vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc)
-            ;&
         vendor/etc/init/camerasloganserver.rc)
             sed -i 's|writepid /dev/cpuset/foreground/tasks|task_profiles ProcessCapacityHigh|g' "$2"
             ;;
