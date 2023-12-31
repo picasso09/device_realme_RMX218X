@@ -68,7 +68,7 @@ ro.mtk_perf_response_time=1
 # Product
 ro.product.board=oppo6765
 ro.board.platform=mt6765
-ro.hardware.egl=meow
+ro.hardware.egl=mtk
 
 # System
 persist.sys.binary_xml=false
