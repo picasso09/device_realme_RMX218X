@@ -37,6 +37,6 @@
     <bool name="config_fpCancelIfNotIdle">true</bool>
 
     <!-- Fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">realme/RMX2020/RMX2020:10/QP1A.190711.020/1651798546:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">realme/RMX2189T2/RMX2189:10/QP1A.190711.020/1622100863:user/release-keys</string>
 
 </resources>
