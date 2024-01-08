@@ -170,14 +170,14 @@ case $1 in
 
     # Set maximum CPU Freq
     # big cluster
-	echo 1 2000000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
-	echo 1 2000000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
+	echo 1 2301000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
+	echo 1 2301000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
     # LITTLE cluster
-	echo 0 1700000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
-	echo 0 1700000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
+	echo 0 1800000 >/proc/ppm/policy/hard_userlimit_max_cpu_freq
+	echo 0 1800000 >/proc/ppm/policy/hard_userlimit_min_cpu_freq
 	
     # Set maximum GPU Freq
-	echo 823000 > /proc/gpufreq/gpufreq_opp_freq
+	echo 730000 > /proc/gpufreq/gpufreq_opp_freq
 
     # OPPO touchpanel
 	echo 0 > /proc/touchpanel/oppo_tp_limit_enable
