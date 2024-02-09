@@ -30,7 +30,7 @@ VULKAN_SYMLINK += $(TARGET_OUT_VENDOR)/lib/hw/vulkan.mt6765.so
 VULKAN_SYMLINK += $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mt6765.so
 $(VULKAN_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(dir $@)
-	$(hide) ln -sf ../egl/libGLES_meow.so $@
+	$(hide) ln -sf ../egl/libGLES_mtk.so $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(VULKAN_SYMLINK)
 

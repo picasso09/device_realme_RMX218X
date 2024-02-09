@@ -5,9 +5,6 @@ genfscon sysfs /devices/platform/sia81xx@L                            u:object_r
 genfscon sysfs /module/primary_display/parameters                     u:object_r:sysfs_fps:s0
 genfscon proc  /touchpanel                                            u:object_r:proc_tp:s0
 
-# Livedisplay
-genfscon sysfs /devices/platform/mtk_disp_mgr.0/rgb u:object_r:sysfs_livedisplay_tuneable:s0
-
 # Oppo
 genfscon sysfs /class/power_supply/usb/otg_switch                     u:object_r:sysfs_otg_switch:s0
 genfscon proc /oppoVersion/prjVersion                                 u:object_r:proc_oppo_ver:s0
