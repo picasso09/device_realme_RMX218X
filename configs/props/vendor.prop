@@ -61,7 +61,7 @@ persist.vendor.connsys.fm_50khz_support=1
 persist.vendor.connsys.fm_chipid=mt6631
 persist.vendor.connsys.patch.version=-1
 ro.vendor.connsys.dedicated.log=1
-vendor.connsys.driver.ready=no
+vendor.connsys.driver.ready=yes
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
