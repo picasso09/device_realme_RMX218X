@@ -28,6 +28,7 @@ dalvik.vm.dex2oat-threads=6
 # Display
 debug.sf.enable_hwc_vds=0
 persist.sys.brightness.low.gamma=true
+ro.surface_flinger.supports_background_blur=1
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
