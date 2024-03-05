@@ -12,11 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2185/device.mk)
 
-# Inherit some common ProjectElixir stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Cherish stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_RMX2185
+PRODUCT_NAME := cherish_RMX2185
 PRODUCT_DEVICE := RMX2185
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2185
@@ -28,7 +28,7 @@ PRODUCT_SYSTEM_DEVICE := RMX2185
 
 # ProjectElixir additions
 IS_PHONE := true
-AOSP_BUILD_TYPE := UNOFFICIAL
+CHERISH_BUILD_TYPE := UNOFFICIAL
 BUILD_HOSTNAME := DV-WORK
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 720
