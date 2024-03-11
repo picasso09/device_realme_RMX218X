@@ -13,10 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, device/realme/RMX2185/device.mk)
 
 # Inherit some common Cherish stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/scandium/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cherish_RMX2185
+PRODUCT_NAME := scandium_RMX2185
 PRODUCT_DEVICE := RMX2185
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2185
@@ -28,7 +28,8 @@ PRODUCT_SYSTEM_DEVICE := RMX2185
 
 # ProjectElixir additions
 IS_PHONE := true
-CHERISH_BUILD_TYPE := UNOFFICIAL
+SCANDIUM_BUILD_TYPE := OFFICIAL
+WITH_GMS := true
 BUILD_HOSTNAME := DV-WORK
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 720

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_RMX2185.mk
+    $(LOCAL_DIR)/scandium_RMX2185.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_RMX2185-user \
-    cherish_RMX2185-userdebug \
-    cherish_RMX2185-eng
+    scandium_RMX2185-user \
+    scandium_RMX2185-userdebug \
+    scandium_RMX2185-eng
