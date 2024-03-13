@@ -67,18 +67,18 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    audio.bluetooth.default  \
-    GoogleCameraGo
+    audio.bluetooth.default
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Snap \
+    GoogleCameraGo
 
 # KPOC
 PRODUCT_PACKAGES += \
     libsuspend \
-    android.hardware.health@1.0 \
-    android.hardware.health@2.0
+    android.hardware.health@2.0 \
+    android.hardware.health@1.0
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -153,6 +153,7 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
+
 # ThemePicker
 PRODUCT_PACKAGES += \
     ThemePicker \
