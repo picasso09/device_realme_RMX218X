@@ -153,6 +153,8 @@ BOARD_VNDK_VERSION  := current
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := system/product
 
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
