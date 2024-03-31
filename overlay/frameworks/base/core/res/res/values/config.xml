@@ -418,6 +418,5 @@
     <integer name="config_screenBrightnessDoze">17</integer>
 		
     <string name="config_ims_package">com.mediatek.ims</string>
-    <bool name="config_carrier_volte_available">true</bool>
     <bool name="config_dynamic_bind_ims">true</bool>
 </resources>

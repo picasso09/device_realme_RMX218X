@@ -1,5 +1,7 @@
 type mtk_hal_mms, domain;
 type mtk_hal_mms_hwservice, hwservice_manager_type;
+type untrusted_app_29, domain;
+type gmscore_app, domain;
 
 # Allow untrusted_app_29 to find mtk_hal_mms_hwservice
 allow { appdomain -isolated_app } mtk_hal_mms_hwservice:hwservice_manager find;
