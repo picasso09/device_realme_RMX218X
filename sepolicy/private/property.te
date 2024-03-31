@@ -1,4 +1,4 @@
-# Deklarasi atribut system_property_type
+# Declaration system_property_type attribute 
 attribute system_property_type;
 
 type perf_prop, property_type, system_property_type;
