@@ -69,7 +69,10 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    audio.bluetooth.default
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_policy.stub
 
 # Camera
 PRODUCT_PACKAGES += \

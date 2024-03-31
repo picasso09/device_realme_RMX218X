@@ -113,15 +113,15 @@
         <item>63</item>
         <item>67</item>
         <item>70</item>
-        <item>73</item>
-        <item>77</item>
-        <item>91</item>
-        <item>105</item>
-        <item>118</item>
-        <item>133</item>
-        <item>183</item>
-        <item>221</item>
-        <item>255</item>
+        <item>140</item>
+        <item>320</item>
+        <item>600</item>
+        <item>753</item>
+        <item>850</item>
+        <item>1100</item>
+        <item>1400</item>
+        <item>1700</item>
+        <item>2047</item>
     </integer-array>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
@@ -285,7 +285,7 @@
      <!-- Flag specifying whether VoLTE should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
-     <bool name="config_carrier_volte_available">false</bool>
+     <bool name="config_carrier_volte_available">true</bool>
 
     <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier

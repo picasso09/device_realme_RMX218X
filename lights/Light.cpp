@@ -50,9 +50,15 @@ static T get(const std::string& path, const T& def) {
 
 static int rgbToBrightness(const LightState& state) {
     int color = state.color & 0x00ffffff;
-    return ((77 * ((color >> 16) & 0x00ff))
-            + (150 * ((color >> 8) & 0x00ff))
-            + (29 * (color & 0x00ff))) >> 8;
+    int red = (color >> 16) & 0xff;
+    int green = (color >> 8) & 0xff;
+    int blue = color & 0xff;
+    int brightness = (red * 4) + (green * 8) + (blue * 2);
+    if (brightness > 2047) {
+        brightness = 2047;
+    }
+    
+    return brightness;
 }
 
 Light::Light() {
