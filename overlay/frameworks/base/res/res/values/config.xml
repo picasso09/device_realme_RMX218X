@@ -1,0 +1,3 @@
+<!--Systeminfo for quick settings header -->
+<string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone3/temp</string>
+<string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
