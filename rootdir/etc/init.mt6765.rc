@@ -1,4 +1,3 @@
-import /system/etc/init/init.safailnet.rc
 
 on init
     mount none /vendor/lost+found /vendor/overlay bind
@@ -40,11 +39,6 @@ on post-fs
     #  so it is fine to just revert back)
     umount /vendor/etc/fstab.mt6765
 
-on property:sys.boot_completed=1
-    # Restrict permissions to socket file 
-    # to hide Magisk & co.
-    chmod 440 /proc/net/unix
-
 on post-fs-data
     # VideoCodec
     chmod 0666 /dev/video0
@@ -70,14 +64,12 @@ on post-fs-data
     # Disable edge limit control interface
     write /proc/touchpanel/oppo_tp_limit_enable 0
 
-    # Services
-    stop console
 
 on boot
     # USB-OTG
     chown system system /sys/class/power_supply/usb/otg_switch
     chmod 0666 /sys/class/power_supply/usb/otg_switch
-    write /sys/class/power_supply/usb/otg_switch 1 
+    write /sys/class/power_supply/usb/otg_switch 0
 	
     # Set permission for Goodix FP
     chown system system /dev/goodix_fp
@@ -91,6 +83,9 @@ on boot
     setprop ro.boot.vendor.overlay.static false
     setprop vendor.connsys.driver.ready yes
 
+    # Brightness fix by Schrwarch
+    setprop persist.sys.qcom-brightness 2047
+
 on property:sys.boot_completed=1
     # Toggle airplane mode on and off on boot to enable volte.
     # This hack needs ImsInit commit to request ims on boot to work properly
@@ -101,6 +96,7 @@ on property:sys.boot_completed=1
 
     exec - root -- /system/bin/sh -c "settings put global airplane_mode_on 0"
     exec - root -- /system/bin/sh -c "am broadcast -a android.intent.action.AIRPLANE_MODE --ez state false"
+    exec - root -- /system/bin/sh -c "sh /system/etc/init/set_zram.sh"
     
     # ZRAM
     swapon_all /vendor/fstab.enableswap
@@ -129,7 +125,7 @@ service face_hal /system/bin/true
     oneshot
     disabled
 
-service set_zram /vendor/bin/sh /system/etc/init/set_zram.sh
+service set_zram /system/bin/sh /system/etc/init/set_zram.sh
     class late_start
     disabled
     user root
@@ -139,13 +135,6 @@ service set_zram /vendor/bin/sh /system/etc/init/set_zram.sh
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
     stop vendor.ril-daemon
-
-# Performance profiles
-on property:perf_profile=1
-    exec - root -- /system/bin/perf_profile.sh 1
-
-on property:perf_profile=0
-    exec - root -- /system/bin/perf_profile.sh 0
 
 on property:sys.boot_completed=1
     chown root root /sys/module/ged/parameters/gx_force_cpu_boost

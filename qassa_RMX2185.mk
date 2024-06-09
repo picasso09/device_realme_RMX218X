@@ -17,23 +17,24 @@
 # Inherit from device
 $(call inherit-product, device/realme/RMX2185/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common KeepQassa stuff.
+$(call inherit-product, vendor/qassa/config/common_full_phone.mk)
 
-# Nusantara tag
-NAD_BUILD_TYPE := UNOFFICIAL
+# KeepQASSA tag
+QASSA_BUILD_TYPE := OFFICIAL
+#WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Boot animaton
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX2185
-PRODUCT_NAME := nad_RMX2185
+PRODUCT_NAME := qassa_RMX2185
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2185
 PRODUCT_MANUFACTURER := Realme
 
-# Nusantara Stuff
 BUILD_HOSTNAME := DV-WORK
 TARGET_FACE_UNLOCK_SUPPORTED := true
 

@@ -4,7 +4,7 @@
 MemTotalStr=`cat /proc/meminfo | grep MemTotal`
 MemTotal=${MemTotalStr:16:8}
 echo 1 > /sys/block/zram0/reset
-echo 'zstd' > /sys/block/zram0/comp_algorithm
+echo 'lz4' > /sys/block/zram0/comp_algorithm
 sleep 0.5
 if [ $MemTotal -le 3145728 ]; then
   #config 1.6GB zram size with memory less or equals to 3 GB

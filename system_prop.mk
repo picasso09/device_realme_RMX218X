@@ -16,7 +16,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
-	
+
 # LMKD
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.lmk.psi_complete_stall_ms=150 \
@@ -48,7 +48,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000 \
     debug.sf.enable_hwc_vds=0 \
     ro.surface_flinger.supports_background_blur=1
-
 
 # ZRAM
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \

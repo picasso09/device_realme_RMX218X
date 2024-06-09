@@ -26,7 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Screen density
 PRODUCT_AAPT_CONFIG := xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-PRODUCT_AAPT_PREBUILT_DPI := xhdpi xxhdpi 
+PRODUCT_AAPT_PREBUILT_DPI := xhdpi xxhdpi
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1600
@@ -176,5 +176,5 @@ PRODUCT_PACKAGES += \
 
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/realme/RMX2185/RMX2185-vendor.mk)
-$(call inherit-product-if-exists, vendor/realme/RMX2185-ims/RMX2185-ims.mk)
+#$(call inherit-product-if-exists, vendor/realme/RMX2185-ims/RMX2185-ims.mk)
 
