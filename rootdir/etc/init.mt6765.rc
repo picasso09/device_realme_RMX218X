@@ -96,7 +96,13 @@ on property:sys.boot_completed=1
 
     exec - root -- /system/bin/sh -c "settings put global airplane_mode_on 0"
     exec - root -- /system/bin/sh -c "am broadcast -a android.intent.action.AIRPLANE_MODE --ez state false"
+
     exec - root -- /system/bin/sh -c "sh /system/etc/init/set_zram.sh"
+    exec - root -- /system/bin/sh -c "echo 2147483648 > /sys/block/zram0/disksize"
+    exec - root -- /system/bin/sh -c "echo 180 > /proc/sys/vm/swappiness"
+    exec - root -- /system/bin/sh -c "echo 60 > /proc/sys/vm/direct_swappiness"
+    exec - root -- /system/bin/sh -c "mkswap /dev/block/zram0"
+    exec - root -- /system/bin/sh -c "swapon -d /dev/block/zram0"
     
     # ZRAM
     swapon_all /vendor/fstab.enableswap
