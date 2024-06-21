@@ -97,14 +97,11 @@ on property:sys.boot_completed=1
     exec - root -- /system/bin/sh -c "settings put global airplane_mode_on 0"
     exec - root -- /system/bin/sh -c "am broadcast -a android.intent.action.AIRPLANE_MODE --ez state false"
 
-    exec - root -- /system/bin/sh -c "sh /system/etc/init/set_zram.sh"
-    exec - root -- /system/bin/sh -c "echo 2147483648 > /sys/block/zram0/disksize"
-    exec - root -- /system/bin/sh -c "echo 180 > /proc/sys/vm/swappiness"
-    exec - root -- /system/bin/sh -c "echo 60 > /proc/sys/vm/direct_swappiness"
-    exec - root -- /system/bin/sh -c "mkswap /dev/block/zram0"
-    exec - root -- /system/bin/sh -c "swapon -d /dev/block/zram0"
-    
+on boot
     # ZRAM
+    chown root /system/etc/init/set_zram.sh
+    chmod +x /system/etc/init/set_zram.sh
+
     swapon_all /vendor/fstab.enableswap
 
     # Runtime fs tuning for runtime performance
@@ -131,7 +128,7 @@ service face_hal /system/bin/true
     oneshot
     disabled
 
-service set_zram /system/bin/sh /system/etc/init/set_zram.sh
+service set_zram /vendor/bin/sh /system/etc/init/set_zram.sh
     class late_start
     disabled
     user root
@@ -146,6 +143,7 @@ on property:sys.boot_completed=1
     chown root root /sys/module/ged/parameters/gx_force_cpu_boost
     chown root root /proc/cpufreq/cpufreq_power_mode
     chown root root /proc/cpufreq/cpufreq_cci_mode
+    chown root root /system/etc/set_zram.sh
     start set_zram
 	
 # USB
