@@ -16,10 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="xd_device_name_summary">Realme C12</string>
+    <string name="xd_device_name_summary">Realme G35 Series</string>
     <string name="xd_chipset_type_summary">MT6765G | G35</string>
     <string name="xd_gpu_summary">PowerVR Rogue GE8320</string>
-    <string name="xd_camera_mp_summary">13MP + 2MP + 2MP Triple Camera</string>
+    <string name="xd_camera_mp_summary">13MP Wide AI Camera</string>
     <string name="xd_screen_type_summary">IPS LCD HD+ 6,52" Screen</string>
 
 </resources>

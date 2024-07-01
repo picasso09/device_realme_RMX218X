@@ -96,8 +96,12 @@ on property:sys.boot_completed=1
 
     exec - root -- /system/bin/sh -c "settings put global airplane_mode_on 0"
     exec - root -- /system/bin/sh -c "am broadcast -a android.intent.action.AIRPLANE_MODE --ez state false"
-    
+
+on boot
     # ZRAM
+    chown root /system/etc/init/set_zram.sh
+    chmod +x /system/etc/init/set_zram.sh
+
     swapon_all /vendor/fstab.enableswap
 
     # Runtime fs tuning for runtime performance
@@ -139,6 +143,7 @@ on property:sys.boot_completed=1
     chown root root /sys/module/ged/parameters/gx_force_cpu_boost
     chown root root /proc/cpufreq/cpufreq_power_mode
     chown root root /proc/cpufreq/cpufreq_cci_mode
+    chown root root /system/etc/set_zram.sh
     start set_zram
 	
 # USB

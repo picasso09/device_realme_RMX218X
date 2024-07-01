@@ -14,6 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import hashlib
 import common
 import re
 
@@ -23,6 +24,16 @@ def FullOTA_InstallEnd(info):
 
 def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info)
+  return
+
+def AddModemAssertion(info):
+  android_info = info.input_zip.read("OTA/android-info.txt")
+  m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info.decode('utf-8'))
+  if m:
+    version = m.group(1).rstrip()
+    if len(version) and '*' not in version:
+      cmd = 'assert(realme.verify_modem("' + version + '") == "1");'
+      info.script.AppendExtra(cmd)
   return
 
 def AddImage(info, basename, dest):
