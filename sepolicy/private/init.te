@@ -19,3 +19,14 @@ allow init sysfs_battery_supply:file { setattr };
 
 # Allow init to create socket_device(s)
 allow init socket_device:sock_file create_file_perms;
+
+# declaration init_t
+type init_t;
+
+# Allow ini execute system file
+allow init_t system_file:file { read execute open };
+allow init_t self:process execmem;
+
+# Allow ini execute system file
+allow init_t vendor_file:file { read execute open };
+allow init_t self:process execmem;
