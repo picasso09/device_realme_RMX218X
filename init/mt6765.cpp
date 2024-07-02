@@ -50,22 +50,22 @@ void setRMX(unsigned int variant)
     RMX218X_props prop[3] = {};
 
     prop[0] = {
-        "full_oppo6765-user 10 QP1A.190711.020 bedd37e98646d3a1 release-keys",
         "realme/RMX2180/RMX2180:10/QP1A.190711.020/1622100861:user/release-keys",
+	"google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys",
         "RMX2180",
         "RMX2180",
     };
 
     prop[1] = {
-        "full_oppo6765-user 10 QP1A.190711.020 bedd37e98646d3a2 release-keys",
         "realme/RMX2189/RMX2189:10/QP1A.190711.020/1622100862:user/release-keys",
+	"google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys",
         "RMX2189",
         "RMX2189",
     };
 
     prop[2] = {
-        "full_oppo6765-user 10 QP1A.190711.020 bedd37e98646d3a3 release-keys",
         "realme/RMX2185/RMX2185:10/QP1A.190711.020/1622100863:user/release-keys",
+	"google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys",
         "RMX2185",
         "RMX2185",
     };
