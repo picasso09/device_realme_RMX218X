@@ -19,3 +19,6 @@
 
 # Misc
 /system/bin/perf_profile\.sh	u:object_r:perf_profile_exec:s0
+
+# FPS Info
+/proc/fps_tm/fps_count           u:object_r:sysfs_fps:s0
