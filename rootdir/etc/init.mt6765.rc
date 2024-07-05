@@ -77,7 +77,6 @@ on boot
     # DT2W
     chown system system /proc/touchpanel/double_tap_enable
     chmod 0666 /proc/touchpanel/double_tap_enable
-    write /proc/touchpanel/double_tap_enable 1
 
     # WiFi fix by Techyminati
     setprop ro.boot.vendor.overlay.static false
