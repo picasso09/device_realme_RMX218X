@@ -18,7 +18,10 @@
 /vendor/bin/init\.oppo\.fingerprint\.sh                                                                  u:object_r:hal_fingerprint_RMX2185_exec:s0
 
 # Misc
-/system/bin/perf_profile\.sh	u:object_r:perf_profile_exec:s0
+/system/bin/perf_profile\.sh		u:object_r:perf_profile_exec:s0
 
 # FPS Info
-/proc/fps_tm/fps_count           u:object_r:sysfs_fps:s0
+/proc/fps_tm/fps_count			u:object_r:sysfs_fps:s0
+
+# TouchPanel
+/proc/touchpanel/double_tap_enable	u:object_r:sysfs_tap_to_wake:s0
